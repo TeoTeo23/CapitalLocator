@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 String region = input.getText().toString();
                 if(!map.isInMap(region))
                     output.setText("ERROR");
-                else
-                    output.setText(map.seek(region));
+                output.setText(map.seek(region));
             }
         });
     }
